@@ -7,6 +7,27 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --color: #d44949d5;
+  --backcolor: rgba(183, 200, 251, 0.644);
+}
+body {
+  /* height: 100vh; */
+
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bc {
+  background-image: url(/images/main.svg);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 h1 {
   font-size: 3rem;
   font-family: "Sora", sans-serif;
@@ -16,6 +37,15 @@ h2 {
   padding: 0.5rem;
   font-family: "Sora", sans-serif;
 }
+label {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
 input {
   font-size: 1rem;
   width: 200px;
@@ -24,7 +54,7 @@ input {
   outline: none;
   border-radius: 10px;
   font-family: "Sora", sans-serif;
-  color: #055052;
+  color: var(--color);
   background-color: #f8f8f8;
 }
 .submit-btn {
@@ -36,7 +66,7 @@ input {
   outline: none;
   border-radius: 10px;
   color: rgb(230, 230, 230);
-  background-color: #055052;
+  background-color: var(--color);
   font-family: "Sora", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -49,7 +79,7 @@ input {
 .output {
   margin: 2rem;
   width: 65%;
-  background: rgba(0, 151, 19, 0.1);
+  background: var(--backcolor);
   text-align: center;
   border-radius: 1rem;
 }
@@ -61,7 +91,7 @@ input {
   align-items: center;
   text-align: center;
   /* border: 1px solid black; */
-  background: rgba(0, 151, 19, 0.1);
+  background: var(--backcolor);
   /* margin: 0rem 5rem; */
   margin-top: 2rem;
   padding: 1.5rem 0.3rem;
@@ -76,17 +106,25 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: 1px solid black; */
-  background: rgba(0, 151, 19, 0.1);
-  /* margin: 0rem 4rem; */
-  height: 85vh;
+  background: var(--backcolor);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
 .img-para {
-  color: #055052;
+  color: var(--color);
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   padding: 1rem;
   font-weight: bold;
+}
+.error1,
+.error2 {
+  color: #cf0000;
+  font-family: "Inter", sans-serif;
+}
+.svg {
+  width: 290px;
+  text-align: center;
+  padding: 1rem 1rem 1rem 0.1rem;
+  margin: 1rem;
 }

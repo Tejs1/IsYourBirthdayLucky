@@ -1,6 +1,6 @@
 const date = document.getElementById("date");
 const button = document.getElementById("submit");
-const lNumber = document.getElementById("number");
+const luckyNumber = document.getElementById("number");
 const output = document.getElementById("output");
 
 //Submit btn click handler for checking lucky birthdate
@@ -16,13 +16,24 @@ function clickHandler() {
 
   //finding sum of digits of birthday is divisible by their lucky number
   const luck = year + month + day;
-  const number = lNumber.value;
-
-  if (luck % number === 0 || luck % number === 5) {
-    output.innerHTML = `<p class="img-para">YEAH! Your Birthdate is Lucky XD</p>`;
+  const number = luckyNumber.value;
+  if (date.value === "") {
+    error1.innerText = "Please enter valid date";
+  } else if (number === "" || number <= 0) {
+    error1.innerText = "";
+    error2.innerText = "Please enter valid number";
+  } else if (luck % number === 0 || luck % number === 5) {
+    output.innerHTML = `<p class="img-para">YEAH! Your Birthdate is Lucky XD</p>
+    <img id="img" class="svg" src="images/lucky.svg" />`;
+    error1.innerText = "";
+    error2.innerText = "";
   } else {
     output.innerHTML = `
-    <p class="img-para">OOPS! Your Birthdate is not Lucky ;(</p>`;
+    <p class="img-para">OOPS! Your Birthdate is not Lucky ;(</p>
+    <img id="img" class="svg" src="images/unlucky.svg" />`;
+
+    error1.innerText = "";
+    error2.innerText = "";
   }
 }
 
