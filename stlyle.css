@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Sora&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Sora", sans-serif;
+  padding: 1rem;
+}
+h2 {
+  padding: 0.5rem;
+  font-family: "Sora", sans-serif;
+}
+input {
+  font-size: 1rem;
+  width: 200px;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: "Sora", sans-serif;
+  color: #055052;
+  background-color: #f8f8f8;
+}
+.submit-btn {
+  width: 200px;
+  padding: 1rem;
+  margin: 30px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: rgb(230, 230, 230);
+  background-color: #055052;
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.submit-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: white;
+}
+.output {
+  margin: 2rem;
+  width: 65%;
+  background: rgba(0, 151, 19, 0.1);
+  text-align: center;
+  border-radius: 1rem;
+}
+.main {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid black; */
+  background: rgba(0, 151, 19, 0.1);
+  /* margin: 0rem 5rem; */
+  margin-top: 2rem;
+  padding: 1.5rem 0.3rem;
+  /* height: 80vh; */
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.section {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid black; */
+  background: rgba(0, 151, 19, 0.1);
+  /* margin: 0rem 4rem; */
+  height: 85vh;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.img-para {
+  color: #055052;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-weight: bold;
+}
